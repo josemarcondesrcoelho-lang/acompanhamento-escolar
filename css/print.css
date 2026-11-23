@@ -1,0 +1,10 @@
+/* Impressão / "Salvar como PDF": imprime somente o relatório */
+@page { size: A4; margin: 12mm; }
+body { background: #fff !important; color: #111 !important; }
+.sidebar, .sidebar-fundo, .topbar, .faixa-parcial, .toasts, .no-print, #boot, #tela-login, .pagina-topo, .rel-controles { display: none !important; }
+.app { display: block; } .coluna { display: block; } .conteudo { padding: 0; max-width: none; }
+.relatorio { box-shadow: none; padding: 0; max-width: none; }
+.relatorio h2, .relatorio .card, .relatorio table, .relatorio .chart-box { break-inside: avoid; }
+.relatorio .chart-box { height: 230px; }
+.tabela-wrap { overflow: visible; }
+body.imprimindo-relatorio .conteudo > *:not(.relatorio-area) { display: none !important; }
